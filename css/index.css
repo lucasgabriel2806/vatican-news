@@ -17,27 +17,69 @@
 
 header {
     background: var(--vermelho-principal);
+    padding: 10px 0 20px;
 }
 
-header > a > img {
+header > .container-header {
+    width: 1004px;
+    margin: auto;
+}
+
+header > .container-header > .flex-container-left {
+    display: flex;
+    align-items: center;
+}
+
+header > .container-header > .flex-container-left > a > img {
     display: inline;
 }
 
-header > nav {
+header > .container-header > .flex-container-left > nav {
     display: inline;
 }
 
-header > nav > ul {
+header > .container-header > .flex-container-left > nav > ul {
     display: inline;
+    margin-left: 20px;
 }
 
-header > nav > ul > li {
+header > .container-header > .flex-container-left > nav > ul > li {
     list-style: none;
     display: inline;
     margin-left: 20px;
 }
 
-header > nav > ul > li > a {
+header > .container-header > .flex-container-left > nav > ul > li > a {
     color: white;
     text-decoration: none;
 }
+
+header > .container-header > .flex-container-right img {
+    width: 18px;
+    display: inline;
+}
+
+header > .container-header > .flex-container-right > .select-lingua {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+}
+
+header > .container-header > .flex-container-right > .select-lingua > img {
+    display: inline;
+}
+
+header > .container-header > .flex-container-right > .select-lingua > p {
+    display: inline;
+}
+
+.header-bottom {
+    background: var(--vermelho-principal);
+    border-top: 1px solid white;
+}
+
+.header-bottom > .container-header-bottom {
+    width: 1004px;
+    margin: auto;
+}
+
