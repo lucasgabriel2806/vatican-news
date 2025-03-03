@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+:root {
+    --vermelho-principal: #CC0000;
+    --vermelho-escuro: #B30000;
+    --vermelho-claro: #E73838;
+
+    --cinza-claro: #444444;
+    --cinza-escuro: #383838;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: var(--vermelho-principal);
+}
+
+header > a > img {
+    display: inline;
+}
+
+header > nav {
+    display: inline;
+}
+
+header > nav > ul {
+    display: inline;
+}
+
+header > nav > ul > li {
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+}
+
+header > nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
