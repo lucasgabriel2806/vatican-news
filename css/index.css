@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 :root {
+    --background-site: #E9E9E9;
+
     --vermelho-principal: #CC0000;
     --vermelho-escuro: #B30000;
     --vermelho-claro: #E73838;
@@ -13,6 +15,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: var(--background-site);
 }
 
 header {
@@ -130,4 +136,27 @@ header > .container-header > .flex-cont-right > .select-lingua > p {
 
 .header-bottom > .container-header-bottom > .flex-cont-right > .programacao > img {
     width: 16px;
+}
+
+/* ----- MAIN ----- */
+main {
+    width: 1004px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+main > .noticia-principal > .imagem > a > img {
+    width: 492px;
+}
+
+main > .noticia-principal > .mensagem {
+    width: 492px;
+    padding: 10px;
+    background: var(--vermelho-principal);
+}
+
+main > .noticia-principal > .mensagem > a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
 }
