@@ -25,51 +25,57 @@ header > .container-header {
     margin: auto;
 }
 
-header > .container-header > .flex-container-left {
-    display: flex;
+header > .container-header > .flex-cont-left {
+    display: inline-flex;
     align-items: center;
 }
 
-header > .container-header > .flex-container-left > a > img {
+header > .container-header > .flex-cont-left > a > img {
     display: inline;
 }
 
-header > .container-header > .flex-container-left > nav {
+header > .container-header > .flex-cont-left > nav {
     display: inline;
 }
 
-header > .container-header > .flex-container-left > nav > ul {
+header > .container-header > .flex-cont-left > nav > ul {
     display: inline;
     margin-left: 20px;
 }
 
-header > .container-header > .flex-container-left > nav > ul > li {
+header > .container-header > .flex-cont-left > nav > ul > li {
     list-style: none;
     display: inline;
     margin-left: 20px;
 }
 
-header > .container-header > .flex-container-left > nav > ul > li > a {
+header > .container-header > .flex-cont-left > nav > ul > li > a {
     color: white;
     text-decoration: none;
 }
 
-header > .container-header > .flex-container-right img {
+header > .container-header > .flex-cont-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header > .container-header > .flex-cont-right img {
     width: 18px;
     display: inline;
 }
 
-header > .container-header > .flex-container-right > .select-lingua {
+header > .container-header > .flex-cont-right > .select-lingua {
     display: inline-flex;
     align-items: center;
     color: white;
 }
 
-header > .container-header > .flex-container-right > .select-lingua > img {
+header > .container-header > .flex-cont-right > .select-lingua > img {
     display: inline;
 }
 
-header > .container-header > .flex-container-right > .select-lingua > p {
+header > .container-header > .flex-cont-right > .select-lingua > p {
     display: inline;
 }
 
@@ -83,3 +89,45 @@ header > .container-header > .flex-container-right > .select-lingua > p {
     margin: auto;
 }
 
+.header-bottom > .container-header-bottom > .flex-cont-left {
+    display: inline-flex;
+    justify-content: start;
+}
+
+.header-bottom > .container-header-bottom > .flex-cont-left > .radio-vaticana {
+    background: white;
+    display: inline-block;
+    color: var(--vermelho-principal);
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.header-bottom > .container-header-bottom > .flex-cont-left > .allegretto {
+    display: inline;
+    color: white;
+}
+
+.header-bottom > .container-header-bottom > .flex-cont-right {
+    display: flex;
+    justify-content: end;
+}
+
+.header-bottom > .container-header-bottom > .flex-cont-right > .podcast {
+    display: inline;
+    background: white;
+    color: var(--vermelho-principal);
+}
+
+.header-bottom > .container-header-bottom > .flex-cont-right > .podcast > img {
+    width: 14px;
+}
+
+.header-bottom > .container-header-bottom > .flex-cont-right > .programacao {
+    display: inline;
+    background: white;
+    color: var(--vermelho-principal);
+}
+
+.header-bottom > .container-header-bottom > .flex-cont-right > .programacao > img {
+    width: 16px;
+}
