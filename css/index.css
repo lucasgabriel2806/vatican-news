@@ -161,6 +161,23 @@ main > .grid-cont-inicio > .noticia {
     background: teal;
 }
 
+main > .grid-cont-inicio > .noticia > p {
+    background: var(--vermelho-principal);
+    color: white;
+    font-size: 38px;
+    /* position: relative;
+    bottom: 0; */
+}
+
+main > .grid-cont-inicio > .noticia > img {
+    width: 100%;
+}
+
+main > .grid-cont-inicio > .noticia > p {
+    padding: 10px;
+    padding-bottom: 76px;
+}
+
 /*main > .noticia-principal {
     height: 468px;
 }
