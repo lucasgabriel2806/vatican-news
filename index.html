@@ -1,48 +1,93 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Notícias do Vaticano - Todas as notícias sobre a Igreja - Vatican News</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/variaveis.css">
 
     <link rel="stylesheet" href="css/index.css">
 
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
 </head>
+
 <body>
+
+    <!-- HEADER -->
 
     <header>
 
+        <!-- CONTAINER NO HEADER -->
+        <!-- Contém todos os elementos do header, usamos ele para posicionar 
+        o container da esquerda e direita flexbox -->
         <div class="container-header">
+
+            <!-- Container para os elementos da esquerda -->
             <div class="flex-cont-left">
+
+                <!-- Logo Vatican News -->
                 <a href="index.html">
+
                     <img src="images/vatican-news-header-white.png" alt="Vatican News Logo">
+
                 </a>
+
+                <!-- NAVBAR -->
                 <nav>
+
                     <ul>
+
                         <li>
+
                             <a href="#">PAPA</a>
+
                         </li>
+
                         <li>
+
                             <a href="#">VATICANO</a>
+
                         </li>
+
                         <li>
+
                             <a href="#">IGREJA</a>
+
                         </li>
+
                         <li>
+
                             <a href="#">MUNDO</a>
+
                         </li>
+
                     </ul>
+
                 </nav>
+
             </div>
 
+            <!-- Container para os elementos da direita -->
             <div class="flex-cont-right">
 
                 <img src="images/search-icon.png" alt="search-icon">
 
                 <div class="select-lingua">
+
                     <img src="images/globo-icon.png" alt="globo-icon">
+
                     <p>Português</p>
+
                 </div>
 
             </div>
@@ -51,57 +96,98 @@
 
     </header>
 
+    <!-- Parte de baixo do header, após as linhas brancas -->
     <div class="header-bottom">
+
+        <!-- Container para posicionar com flexbox -->
         <div class="container-header-bottom">
+            
             <div class="flex-cont-left">
+
                 <div class="radio-vaticana">Radio Vaticana</div>
+
                 <div class="allegretto">Allegretto</div>
+
             </div>
+
             <div class="flex-cont-right">
+
                 <div class="podcast">Podcast <img src="images/antena-de-radio.png" alt="antena de radio"></div>
+
                 <div class="programacao">Programação <img src="images/radio.png" alt="radio"></div>
+
             </div>
+
         </div>
+
     </div>
 
+    <!-- MAIN -->
     <main>
 
         <div class="grid-cont-inicio">
 
-            <div class="noticia" style="grid-area: n-1;">
-                <img src="images/pagina-principal/fraternidade-ecologia-integral.jpeg" alt=""> 
+            <div class="noticia noticia-principal" style="grid-area: n-1;">
+
+                <img src="images/pagina-principal/imagem-teste-maior.jpg" alt=""> 
+
                 <p>Papa no Gemelli: melhora gradual e leve</p>
+
             </div>
 
             <div class="noticia" style="grid-area: n-2;">
-                
+
+                <img src="images/pagina-principal/imagem-teste-menor.jpg" alt="">     
+
+                <p>lorem </p>
+
             </div>
 
             <div class="noticia" style="grid-area: n-3;"></div>
+
             <div class="noticia" style="grid-area: n-4;"></div>
+
             <div class="noticia" style="grid-area: n-5;"></div>
+
             <div class="noticia" style="grid-area: n-6;"></div>
+
             <div class="noticia" style="grid-area: n-7;"></div>
+
             <div class="noticia" style="grid-area: n-8;"></div>
+
             <div class="noticia" style="grid-area: n-9;"></div>
+
             <div class="noticia" style="grid-area: n1-0;"></div>
 
             <!-- <div class="noticia-principal">
+
                 <div class="imagem">
+
                     <a href="#">
+
                         <!- <img src="images/pagina-principal/fraternidade-ecologia-integral.jpeg" alt="fraternidade ecologia integral"> --
+
                     </a>
+
                 </div>
+
                 <div class="mensagem">
+
                     <! <div></div> 
+
                     <a href="#">
+
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
                     </a>
+
                 </div>
+
             </div> -->
         </div>
 
     </main>
     
 </body>
+
 </html>
