@@ -131,36 +131,97 @@ main {
     padding-top: 40px;
 }
 
-/* Criando os grids com noticias     */
+/* Criando os grids com noticias */
 main > .grid-cont-inicio {
     display: grid;
     grid-template-columns: repeat(4, 200px);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(6, 100px);
     gap: 1em;
     grid-template-areas: 
     "n-1 n-1 n-2 n-3"
+    "n-1 n-1 n-2 n-3"
     "n-1 n-1 n-4 n-5"
+    "n-1 n-1 n-4 ..."
+    "n-6 n-7 n-8 n-9"
     "n-6 n-7 n-8 n-9";
 }
 
-main > .grid-cont-inicio > .noticia {
+/* Background color para as notícias (teste) */
+main > .grid-cont-inicio > .cont-noticia, 
+main > .grid-cont-inicio > .cont-noticia.noticia-principal {
     background: teal;
 }
 
-main > .grid-cont-inicio > .noticia > p {
+/* Definindo como relativo para posicionar o paragrafo
+de forma absoluta no bottom */
+main > .grid-cont-inicio > .cont-noticia.noticia-principal {
+    position: relative;
+}
+
+/* Definindo como relativo para posicionar o paragrafo
+de forma absoluta no bottom */
+main > .grid-cont-inicio > .cont-noticia {
+    position: relative;
+}
+
+/* Paragrafo da notícia principal */
+main > .grid-cont-inicio > .cont-noticia.noticia-principal > p {
     background: var(--vermelho-principal);
     color: white;
     font-size: 38px;
-    /* position: relative;
-    bottom: 0; */
+    padding: 10px 10px 80px 10px; 
+    position: absolute;
+    bottom: 0; 
+} 
+
+/* Paragrafo das notícias menores */
+main > .grid-cont-inicio > .cont-noticia > p {
+    font-weight: 600;
+    padding: 10px 10px 22px 10px; 
+    position: absolute;
+    bottom: 0; 
+} 
+
+.fundo-branco {
+    background: white;
+    color: black;
 }
 
-main > .grid-cont-inicio > .noticia > img {
+.fundo-vermelho {
+    background: var(--vermelho-principal);
+    color: white;
+}
+
+/* Imagem da notícia principal */
+main > .grid-cont-inicio > .cont-noticia > .img-noticia-principal {
+    background-image: url("../images/pagina-principal/imagem-teste-maior.jpg");
     width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
-main > .grid-cont-inicio > .noticia > p {
-    padding: 10px 10px 80px 10px;
+/* Imagem das notícias menores */
+main > .grid-cont-inicio > .cont-noticia > .img-noticia {
+    background-image: url("../images/pagina-principal/imagem-teste-menor.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+main > .grid-cont-inicio > .cont-noticia > .img-metade-grid {
+    background-image: url("../images/pagina-principal/agenda-do-papa.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: cover;
+    color: var(--vermelho-principal);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*main > .noticia-principal {
